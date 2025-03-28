@@ -3,29 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Homepage</title>
+    <title>M.Gibran Alkatiri</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- Navbar-->
+    <!-- Header-->
     <header>
-      <h1>Gibran's Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <img
+        src="C:\Users\gibra\TIK2032-Project\profil\pasfoto1.jpg"
+        alt="Foto Profil"
+        class="profile-picture"
+      />
+      <div class="text-container">
+        <p class="subtext">Portfolio</p>
+        <div class="name-wrapper">
+          <h1>M.Gibran Alkatiri</h1>
+          <p class="subtext-1">Mahasiswa</p>
+        </div>
+      </div>
     </header>
 
-    <!-- Home -->
-    <section id="home">
-      <h2>Selamat Datang di Portofolio Saya</h2>
-      <p>
-        Saya M.Gibran Alkatiri seorang 3D Character Artist, AR Developer, dan
-        Frontend Developer.
-      </p>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#">HOME</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#blog">BLOG</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="hero" class="home">
+      <div class="home-card">
+        <h2>Hai, Selamat Datang</h2>
+        <p class="intro-text">
+          Langkah pertama selalu penuh tantangan. Saya mungkin masih di awal
+          perjalanan, tetapi dari sinilah semuanya dimulai!
+        </p>
+      </div>
     </section>
 
     <!-- Gallery -->
@@ -79,5 +106,10 @@
     <footer>
       <p>© Semua Hak Dilindungi.</p>
     </footer>
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

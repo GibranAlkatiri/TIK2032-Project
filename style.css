@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  background: linear-gradient(
+    to bottom,
+    rgba(232, 232, 255, 1),
+    rgba(171, 251, 255, 1)
+  );
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 7%;
+  background-color: rgba(171, 251, 255, 1);
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 10px 10px rgba(129, 129, 129, 0.2);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar a {
+  color: black;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.navbar a:hover {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Profile */
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px 0px 20px;
+  border: 1px solid #333;
+}
+
+/* text container */
+.name-wrapper {
+  display: flex;
+  font-weight: 700;
+  font-style: italic;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-container p {
+  background-color: rgba(210, 210, 210, 0.8);
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.subtext {
+  font-weight: 600;
+  color: #bf00ff;
+  font-size: 15px;
+  margin: -10px 1rem 0;
+}
+
+.subtext-1 {
+  color: #00aeff;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 10px;
+  margin: -10px 0;
+}
+
+section {
+  height: 100vh; /* 100% tinggi viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  background-color: rgba(171, 251, 255, 1);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+}
+
+.home-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px 60px;
+  border-radius: 15px; /* Sudut membulat */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+  top: -30px;
+}
+
+/* Agar h2 dan p lebih teratur */
+.home-card h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.home-card p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px 0;
+}
