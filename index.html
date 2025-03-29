@@ -55,14 +55,36 @@
       </div>
     </section>
 
-    <!-- Gallery -->
+    <!-- Gallery section -->
     <section id="gallery">
-      <h2>Gallery</h2>
-      <p>Kumpulan karya dan proyek yang telah saya buat.</p>
-      <!-- Menampilkan 3 gambar contoh -->
-      <img src="gambar1.jpg" alt="Gambar 1" />
-      <img src="gambar2.jpg" alt="Gambar 2" />
-      <img src="gambar3.jpg" alt="Gambar 3" />
+      <h1 class="gallery-title">GALLERY</h1>
+
+      <div class="image-container">
+        <img
+          class="gallery-img active"
+          src="images/karakter1.png"
+          alt="Gallery Image 1"
+        />
+        <img
+          class="gallery-img"
+          src="images/animasi.png"
+          alt="Gallery Image 2"
+        />
+        <img class="gallery-img" src="images/ar-vr.png" alt="Gallery Image 3" />
+      </div>
+
+      <div class="gallery-text">
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <h2>Membuat Karakter 3D</h2>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+      </div>
+
+      <div class="caption">
+        <p>
+          Saya pernah bekerja dengan Blender untuk membuat karakter 3D, mulai
+          dari desain konsep hingga model siap pakai untuk game dan animasi.
+        </p>
+      </div>
     </section>
 
     <!-- Blog -->
@@ -70,13 +92,7 @@
       <h2>Blog</h2>
       <p>Ini Artikel saya</p>
 
-      <article>
-        <h3>Membuat Karakter 3D</h3>
-        <p>
-          Saya pernah bekerja dengan Blender untuk membuat karakter 3D, mulai
-          dari desain konsep hingga model siap pakai untuk game dan animasi.
-        </p>
-      </article>
+      <article></article>
 
       <article>
         <h3>Mengembangkan Aplikasi AR</h3>
@@ -111,5 +127,8 @@
     <script>
       feather.replace();
     </script>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
