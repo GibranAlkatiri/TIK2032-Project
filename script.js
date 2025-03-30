@@ -58,3 +58,29 @@ function prevSlide() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   updateSlider();
 }
+
+// Smooth Scroll untuk Navbar
+document.querySelectorAll(".navbar a").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+
+    if (targetId === "") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        window.scrollTo({
+          top:
+            targetSection.offsetTop -
+            document.querySelector(".navbar").offsetHeight +
+            40,
+          behavior: "smooth",
+        });
+      }
+    }
+  });
+});

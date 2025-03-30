@@ -45,21 +45,23 @@ header {
 }
 
 .text-container p {
-  background-color: rgba(210, 210, 210, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 .subtext {
   font-weight: 600;
-  color: #bf00ff;
+  color: #ff00ff;
+  font-style: italic;
   font-size: 15px;
   margin: -10px 1rem 0;
 }
 
 .subtext-1 {
-  color: #00aeff;
+  color: #00e1ff;
   font-weight: 500;
+  font-style: italic;
   font-size: 14px;
   padding: 0 10px;
   margin: -10px 0;
@@ -299,7 +301,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   width: min(90%, 800px);
-  gap: 1.2vw;
+  gap: 1vw;
   padding: 1vw;
   position: relative;
   z-index: 2;
@@ -348,7 +350,68 @@ section {
   }
 }
 
+/* Contact section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 30vh; /* Tidak terlalu besar */
+  background: rgb(64, 81, 234);
+  padding: 30px 0px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+#contact h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: rgb(0, 51, 255);
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  border-radius: 10px;
+}
+
+.icons {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+  padding: 15px 30px; /* Menambahkan padding agar background lebih luas */
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s, opacity 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.icons img:active {
+  transform: scale(0.9);
+  filter: brightness(1.2);
+}
+
 footer {
+  background: rgb(64, 81, 234);
+  color: white;
   margin-top: auto;
   text-align: center;
   padding: 10px 0;
