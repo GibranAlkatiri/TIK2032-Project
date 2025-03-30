@@ -26,13 +26,14 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 .profile-picture {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin: 20px 0px 20px;
+  margin-bottom: 10px;
   border: 1px solid #333;
 }
 
@@ -41,12 +42,13 @@ header {
   font-weight: 700;
   font-style: italic;
   align-items: center;
-  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .text-container p {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  padding: 0px 8px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -54,26 +56,20 @@ header {
   font-weight: 600;
   color: #ff00ff;
   font-style: italic;
-  font-size: 15px;
-  margin: -10px 1rem 0;
+  font-size: 14px;
 }
 
 .subtext-1 {
   color: #00e1ff;
   font-weight: 500;
   font-style: italic;
-  font-size: 14px;
-  padding: 0 10px;
-  margin: -10px 0;
+  font-size: 13px;
 }
 
 /* Navbar */
 .navbar {
   position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 7%;
+  padding: 10px 20px;
   background-color: rgba(171, 251, 255, 1);
   top: 0;
   left: 0;
@@ -84,27 +80,18 @@ header {
 
 .nav-container {
   display: flex;
+  justify-content: center;
   gap: 4rem;
 }
 
 .navbar a {
   color: black;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .navbar a:hover {
   font-weight: 700;
-  font-size: 0.9rem;
-}
-
-section {
-  height: 100vh; /* 100% tinggi viewport */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 /* Home Section */
@@ -120,20 +107,16 @@ section {
   justify-content: center;
   text-align: center;
   height: 60vh;
+  padding: 20px;
 }
 
 .home-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px 60px;
   border-radius: 15px; /* Sudut membulat */
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
   text-align: center;
-  max-width: 700px;
-  width: 90%;
-  top: -30px;
+  max-width: 90%;
+  padding: 30px;
 }
 
 .home-card h1 {
@@ -159,10 +142,7 @@ section {
     rgb(142, 176, 255)
   );
   align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
-  box-sizing: border-box;
-  padding-top: 5rem;
+  padding: 100px 10px;
 }
 
 .gallery-title {
@@ -171,6 +151,7 @@ section {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: bold;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -181,31 +162,25 @@ section {
   height: 4px;
   background-color: rgb(0, 51, 255);
   position: absolute;
-  bottom: -1px;
   left: 0;
   border-radius: 10px;
 }
 
 .image-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 20px; /* Jarak antar gambar */
-  max-width: 90vw; /* Lebar maksimal agar responsif */
-  overflow: hidden; /* Mencegah gambar membesar keluar batas */
-  padding: 10px;
+  flex-wrap: wrap;
+  gap: 10px; /* Jarak antar gambar */
 }
 
 .gallery-img {
-  width: 30%; /* Semua gambar punya lebar yang sama */
-  height: auto;
+  width: 25%; /* Semua gambar punya lebar yang sama */
+  height: 25%;
   border-radius: 10px;
   max-height: 250px; /* Sesuaikan tinggi agar seragam */
-  object-fit: contain; /* Pastikan gambar tidak terpotong */
+  object-fit: cover; /* Pastikan gambar tidak terpotong */
   transition: all 0.5s ease-in-out;
   opacity: 0.6;
-  transform: scale(1);
-  position: relative;
 }
 
 .gallery-img.active {
@@ -263,9 +238,8 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
   background: linear-gradient(to bottom, rgb(142, 176, 255), rgb(64, 81, 234));
-  padding: 50px 10px;
+  padding: 100px 10px;
   overflow: hidden;
 }
 
@@ -292,7 +266,7 @@ section {
 
 .exp-title p {
   font-size: 1.1rem;
-  color: #555;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -303,7 +277,6 @@ section {
   width: min(90%, 800px);
   gap: 1vw;
   padding: 1vw;
-  position: relative;
   z-index: 2;
 }
 
@@ -358,7 +331,7 @@ section {
   justify-content: flex-end;
   height: 30vh; /* Tidak terlalu besar */
   background: rgb(64, 81, 234);
-  padding: 30px 0px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -385,16 +358,17 @@ section {
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 5vw; /* Menggunakan vw agar responsif */
   margin-top: 10px;
-  padding: 15px 30px; /* Menambahkan padding agar background lebih luas */
+  padding: 1vw 2vw; /* Menggunakan vw agar mengecil seiring layar mengecil */
   background: rgba(0, 0, 0, 0.6);
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 .icons img {
-  width: 50px;
-  height: 50px;
+  width: 100vw; /* Ikuti perubahan layar */
+  height: auto;
+  max-width: 40px; /* Batasi ukuran maksimal */
   transition: transform 0.3s, opacity 0.3s, filter 0.3s;
   cursor: pointer;
 }
@@ -415,4 +389,11 @@ footer {
   margin-top: auto;
   text-align: center;
   padding: 10px 0;
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
 }
