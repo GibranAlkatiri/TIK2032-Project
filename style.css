@@ -142,7 +142,7 @@ header {
     rgb(142, 176, 255)
   );
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .gallery-title {
@@ -166,27 +166,37 @@ header {
 }
 
 .image-container {
+  width: 100%;
+  overflow: hidden; /* Mencegah gambar keluar dari container */
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px; /* Jarak antar gambar */
-  padding: 30px;
+  justify-content: center; /* Memastikan gambar tetap di tengah */
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Memungkinkan geser horizontal */
+  -webkit-overflow-scrolling: touch;
+  gap: 10px;
+  padding: 30px 50px; /* Menambah padding kiri & kanan */
 }
 
 .gallery-img {
-  width: 25%; /* Semua gambar punya lebar yang sama */
-  height: 25%;
+  flex: 0 0 auto; /* Agar ukuran tetap */
+  width: 30%; /* Lebih besar supaya swipe lebih nyaman */
+  max-width: 250px;
   border-radius: 10px;
-  max-height: 250px; /* Sesuaikan tinggi agar seragam */
-  object-fit: cover; /* Pastikan gambar tidak terpotong */
+  object-fit: cover;
   transition: all 0.5s ease-in-out;
   opacity: 0.6;
+  scroll-snap-align: center;
+  padding: 2px;
 }
 
 .gallery-img.active {
   opacity: 1;
   transform: scale(1.1);
-  transform-origin: center; /* Memastikan pembesaran tetap di tengah */
 }
 
 .gallery-text {
@@ -217,18 +227,6 @@ header {
   color: white;
   font-weight: 400;
   font-size: 15px;
-}
-
-.prev-btn,
-.next-btn {
-  margin-top: 40px;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 8px 10px;
 }
 
 /* Explore section */
@@ -408,5 +406,28 @@ footer {
 
   .bubble-container {
     width: 70%;
+  }
+
+  .image-container {
+    overflow-x: auto; /* Memastikan gambar bisa di-swipe */
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px; /* Jarak antar gambar */
+    max-width: 100%;
+    padding: 20px; /* Ruang ekstra di tepi agar tidak terpotong */
+    overflow-x: auto; /* Memastikan bisa geser ke kiri/kanan */
+    scroll-snap-type: x mandatory;
+  }
+
+  .gallery-img {
+    flex: 0 0 50%; /* Membuat gambar lebih besar pada layar kecil */
+    max-width: 50%;
+    border-radius: 10px;
+    scroll-snap-align: center;
   }
 }
