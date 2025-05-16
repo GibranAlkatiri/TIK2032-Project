@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Showcase Page</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header-->
+    <header>
+      <img
+        src="images/pasfoto1.jpg"
+        alt="Foto Profil"
+        class="profile-picture"
+      />
+      <div class="text-container">
+        <p class="subtext">Showcase Page</p>
+        <div class="name-wrapper">
+          <h1>M.Gibran Alkatiri</h1>
+          <p class="subtext-1">Mahasiswa</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#">HOME</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#explore">EXPLORE</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="hero" class="home">
+      <div class="home-card">
+        <h1>Hai, Selamat Datang</h1>
+        <p>
+          Setiap proyek adalah jejak perjalanan saya. Inilah tempat di mana saya
+          membangun, mengeksplorasi, dan terus berkembang!
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h1 class="gallery-title">GALLERY</h1>
+
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img
+            class="gallery-img active"
+            src="images/karakter1.png"
+            alt="Gallery Image 1"
+          />
+          <img
+            class="gallery-img"
+            src="images/animasi.png"
+            alt="Gallery Image 2"
+          />
+          <img
+            class="gallery-img"
+            src="images/ar-vr.png"
+            alt="Gallery Image 3"
+          />
+        </div>
+      </div>
+
+      <div class="gallery-text">
+        <h2>Membuat Karakter 3D</h2>
+      </div>
+
+      <div class="caption">
+        <p>
+          Saya pernah bekerja dengan Blender untuk membuat karakter 3D, mulai
+          dari desain konsep hingga model siap pakai untuk game dan animasi.
+        </p>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore">
+      <div class="exp-title">
+        <h1>EXPLORATION</h1>
+        <p>Masih Banyak Hal Yang Ingin Saya Pelajari</p>
+      </div>
+
+      <div class="bubble-container">
+        <span class="bubble">HTML</span>
+        <span class="bubble">CSS</span>
+        <span class="bubble">JavaScript</span>
+        <span class="bubble">ReactJS</span>
+        <span class="bubble">NodeJS</span>
+        <span class="bubble">VueJS</span>
+        <span class="bubble">PHP</span>
+        <span class="bubble">Laravel</span>
+        <span class="bubble">MySQL</span>
+        <span class="bubble">MongoDB</span>
+        <span class="bubble">Blender</span>
+        <span class="bubble">Unity</span>
+      </div>
+
+      <div class="logo-background">
+        <img src="logo/logo-html.png" alt="HTML" />
+        <img src="logo/logo-css.png" alt="CSS" />
+        <img src="logo/logo-js.png" alt="JavaScript" />
+        <img src="logo/logo-reactjs.png" alt="ReactJS" />
+        <img src="logo/logo-nodejs.png" alt="NodeJS" />
+        <img src="logo/logo-vuejs.png" alt="VueJS" />
+        <img src="logo/logo-php.png" alt="PHP" />
+        <img src="logo/logo-laravel.png" alt="Laravel" />
+        <img src="logo/logo-mysql.png" alt="MySQL" />
+        <img src="logo/logo-mongodb.png" alt="MongoDB" />
+        <img src="logo/logo-blender.png" alt="Blender" />
+        <img src="logo/logo-unity.png" alt="Unity" />
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-title">
+          <h1>CONTACT ME ON:</h1>
+          <div class="icons">
+            <a
+              href="https://wa.me/6281245194611?text=Halo,%20saya%20melihat%20showcase%20anda"
+              target="_blank"
+            >
+              <img src="contact/whatsapp.png" alt="WhatsApp" />
+            </a>
+            <a
+              href="mailto:malkatiri026@student.unsrat.ac.id?subject=Halo!&body=Halo,%20saya%20melihat%20showcase%20anda."
+              target="_blank"
+            >
+              <img src="contact/gmail.png" alt="Gmail" />
+            </a>
+            <a href="https://discord.gg/gRPjG2DR" target="_blank">
+              <img src="contact/discord.png" alt="Discord" />
+            </a>
+            <a
+              href="https://www.instagram.com/ghiiibrn?igsh=OXVyMnY2N3RtaGd3"
+              target="_blank"
+            >
+              <img src="contact/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <h2>or Left a Message</h2>
+          <form action="https://formspree.io/f/xnnpbyaz" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© Semua Hak Dilindungi.</p>
+    </footer>
+  </body>
+</html>
